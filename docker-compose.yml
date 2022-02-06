@@ -29,6 +29,8 @@ services:
       - ./mysql:/var/lib/mysql
       - ./mysql-conf.d:/etc/mysql/conf.d
     environment:
+      - MYSQL_USER=user
+      - MYSQL_PASSWORD=password
       - MYSQL_ROOT_PASSWORD=password
       - MYSQL_DATABASE=laravel-tutorial
     ports:
